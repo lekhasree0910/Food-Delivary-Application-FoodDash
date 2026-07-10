@@ -453,39 +453,40 @@ Frontend will be live at `http://127.0.0.1:5500/`
 ### 🖥️ Frontend Screenshots
 **| Home Page |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/73b0b4b8-3773-49fd-b1f0-45739d2299f3" />
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/a5627e44-74dc-4c85-82aa-0026f5ec7f4a" />
+
 
 **| Login Page (role selector) |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/714eef24-9bb2-4c6f-91ab-c5f96cfa9ee5" />
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/dd125abc-0126-40db-9d83-8aa260ee7c03" />
 
 **| Register Page |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/10b74905-1f71-4cc9-9071-61a66df58173" />
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/4ee4813c-5da1-497c-9b2e-2c6bb1b2c8d5" />
 
 **| Restaurants Listing (search & filter) |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/c34bdedc-8146-4a96-8429-ceab11cfe3ac" />
+<img width="1920" height="1128" alt="image" src="https://github.com/user-attachments/assets/a5584612-b356-4d5d-ac81-b27646bd5857" />
 
 **| Menu Page (category filter) |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/4fa83631-5b41-412d-aae0-262e7a5c1865" />
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/30289805-de58-4f8f-8b4d-4047bc3a9395" />
 
 **| Cart Page (live total) |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/f6b194c7-f8fb-4601-b6f8-73e51a5c011d" />
+<img width="837" height="470" alt="image" src="https://github.com/user-attachments/assets/691e8b65-e4fe-4492-8af1-8191ce46464e" />
 
 **| Orders Page (tracking timeline) |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/37843d3d-088f-49e1-8839-c1b2eeaa188c" />
+<img width="833" height="490" alt="image" src="https://github.com/user-attachments/assets/4bae7581-ea26-4603-b6c0-a9a31f5f58dc" />
 
 **| Admin Dashboard |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/4f672f8f-f246-42b7-b0da-b0d79de1275b" />
+<img width="830" height="485" alt="image" src="https://github.com/user-attachments/assets/cae1c2eb-2ad9-4ccf-aa45-7ca2d9bc9599" />
 
 **| Restaurant Owner Dashboard |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/011c3c5b-4013-479f-ac3c-ea002ae2e49a" />
+<img width="832" height="485" alt="image" src="https://github.com/user-attachments/assets/437c040d-5326-44e0-b333-b2984af95bd3" />
 
 **| Mobile Responsive View |**
 
