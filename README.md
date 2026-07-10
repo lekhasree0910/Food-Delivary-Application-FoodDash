@@ -428,19 +428,6 @@ Frontend will be live at `http://127.0.0.1:5500/`
 
 ---
 
-### 📮 Postman API Testing Screenshots
-
-| API | Screenshot |
-|---|---|
-| Customer APIs (POST/GET/PUT/DELETE) | <!-- ![Customer APIs](./screenshots/postman/customer_apis.png) --> *(Add screenshot)* |
-| Restaurant APIs | <!-- ![Restaurant APIs](./screenshots/postman/restaurant_apis.png) --> *(Add screenshot)* |
-| Food Menu APIs | <!-- ![Food APIs](./screenshots/postman/food_apis.png) --> *(Add screenshot)* |
-| Cart APIs | <!-- ![Cart APIs](./screenshots/postman/cart_apis.png) --> *(Add screenshot)* |
-| Order APIs | <!-- ![Order APIs](./screenshots/postman/order_apis.png) --> *(Add screenshot)* |
-| Auth APIs (Customer/Restaurant/Admin login) | <!-- ![Auth APIs](./screenshots/postman/auth_apis.png) --> *(Add screenshot)* |
-
----
-
 ### 🖥️ Frontend Screenshots
 | Home Page |
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/73b0b4b8-3773-49fd-b1f0-45739d2299f3" />
