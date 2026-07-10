@@ -442,9 +442,6 @@ Frontend will be live at `http://127.0.0.1:5500/`
 ---
 
 ### 🖥️ Frontend Screenshots
-
-| Page | Screenshot |
-|---|---|
 | Home Page |
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/73b0b4b8-3773-49fd-b1f0-45739d2299f3" />
 | Login Page (role selector) | 
