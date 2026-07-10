@@ -1,0 +1,31 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path("customers/add/", views.add_customer),
+    path("customers/login/", views.login_customer),
+    path("customers/", views.get_customers),
+    path("customers/<str:id>/", views.get_customer_by_id),
+    path("customers/update/<str:id>/", views.update_customer),
+    path("customers/delete/<str:id>/", views.delete_customer),
+    path("restaurants/add/", views.add_restaurant),
+    path("restaurants/", views.get_restaurants),
+    path("restaurants/update/<str:id>/", views.update_restaurant),
+    path("restaurants/delete/<str:id>/", views.delete_restaurant),
+    path("foods/add/", views.add_food),
+    path("foods/", views.get_foods),
+    path("foods/update/<str:id>/", views.update_food),
+    path("foods/delete/<str:id>/", views.delete_food),
+    path("cart/add/", views.add_to_cart),
+    path("cart/", views.get_cart),
+    path("cart/update/<str:id>/", views.update_cart),
+    path("cart/delete/<str:id>/", views.delete_from_cart),
+    path("orders/add/", views.add_order),
+    path("orders/", views.get_orders),
+    path("orders/update/<str:id>/", views.update_order),
+    path("orders/delete/<str:id>/", views.delete_order),
+    path("owners/add/", views.add_owner),
+    path("owners/login/", views.login_owner),
+    path("admins/add/", views.add_admin),
+    path("admins/login/", views.login_admin),
+]

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodDash - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><i class="fas fa-utensils"></i> FoodDash</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+            <a href="orders.html">Orders</a>
+            <a href="dashboard.html" class="active">Admin</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <section class="page-header">
+        <h1 id="dashboardTitle"><i class="fas fa-tachometer-alt"></i> Dashboard</h1>
+    </section>
+
+    <section class="section">
+        <div class="admin-tabs" id="dashboardTabs"></div>
+
+        <div id="tabContent"></div>
+    </section>
+
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+        <div class="modal glass" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3>
+                <button class="btn-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-bottom"><p>&copy; 2026 FoodDash. All rights reserved.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>initDashboard();</script>
+</body>
+</html>

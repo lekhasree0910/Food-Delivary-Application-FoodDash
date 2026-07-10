@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodDash - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><i class="fas fa-utensils"></i> FoodDash</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <section class="auth-section">
+        <div class="auth-card glass">
+            <div class="auth-header">
+                <i class="fas fa-user-circle"></i>
+                <h2 id="loginTitle">Customer Login</h2>
+                <p>Welcome back! Please enter your details.</p>
+            </div>
+            
+            <div class="role-selector">
+                <button type="button" class="role-tab active" onclick="switchLoginRole('customer')">
+                    <i class="fas fa-user"></i> Customer
+                </button>
+                <button type="button" class="role-tab" onclick="switchLoginRole('owner')">
+                    <i class="fas fa-store"></i> Restaurant
+                </button>
+                <button type="button" class="role-tab" onclick="switchLoginRole('admin')">
+                    <i class="fas fa-user-shield"></i> Admin
+                </button>
+            </div>
+
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <input type="hidden" id="loginRole" value="customer">
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+            </form>
+            <div class="auth-footer">
+                <p>Don't have an account? <a href="register.html" id="registerLink">Register here</a></p>
+            </div>
+            <div id="loginMessage"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

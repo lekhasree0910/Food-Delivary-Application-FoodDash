@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodDash - Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><i class="fas fa-utensils"></i> FoodDash</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i> Cart</a>
+            <a href="orders.html">Orders</a>
+            <a href="dashboard.html">Admin</a>
+        </div>
+        <div class="nav-auth" id="navAuth">
+            <a href="login.html" class="btn-nav">Login</a>
+            <a href="register.html" class="btn-nav btn-primary">Register</a>
+        </div>
+        <div class="nav-user" id="navUser" style="display:none;">
+            <span id="navUserName"></span>
+            <button class="btn-nav btn-danger" onclick="logout()">Logout</button>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <section class="page-header">
+        <h1><i class="fas fa-shopping-cart"></i> Your Cart</h1>
+    </section>
+
+    <section class="section">
+        <div class="cart-container" id="cartContainer">
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-summary glass" id="cartSummary" style="display:none;">
+                <h3>Order Summary</h3>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">₹0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <span>₹40</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span id="grandTotal">₹0</span>
+                </div>
+                <button class="btn btn-primary btn-full" onclick="checkout()">
+                    <i class="fas fa-credit-card"></i> Checkout
+                </button>
+            </div>
+        </div>
+        <div id="emptyCart" class="empty-state glass">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>Your cart is empty</h3>
+            <p>Add some delicious food items to get started!</p>
+            <a href="menu.html" class="btn btn-primary">Browse Menu</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom"><p>&copy; 2026 FoodDash. All rights reserved.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>loadCart();</script>
+</body>
+</html>

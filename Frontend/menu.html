@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodDash - Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><i class="fas fa-utensils"></i> FoodDash</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+            <a href="orders.html">Orders</a>
+            <a href="dashboard.html">Admin</a>
+        </div>
+        <div class="nav-auth" id="navAuth">
+            <a href="login.html" class="btn-nav">Login</a>
+            <a href="register.html" class="btn-nav btn-primary">Register</a>
+        </div>
+        <div class="nav-user" id="navUser" style="display:none;">
+            <span id="navUserName"></span>
+            <button class="btn-nav btn-danger" onclick="logout()">Logout</button>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <section class="page-header">
+        <h1><i class="fas fa-utensils"></i> Food Menu</h1>
+        <div class="filter-bar glass">
+            <div class="search-bar" style="flex:1;">
+                <i class="fas fa-search"></i>
+                <input type="text" id="foodSearch" placeholder="Search food items..." onkeyup="searchFoods()">
+            </div>
+            <select id="categoryFilter" onchange="searchFoods()">
+                <option value="">All Categories</option>
+                <option value="Starter">Starter</option>
+                <option value="Main Course">Main Course</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Beverage">Beverage</option>
+                <option value="Snack">Snack</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="food-grid" id="foodList"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom"><p>&copy; 2026 FoodDash. All rights reserved.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>loadFoods();</script>
+</body>
+</html>

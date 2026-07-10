@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodDash - Orders</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><i class="fas fa-utensils"></i> FoodDash</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+            <a href="orders.html" class="active">Orders</a>
+            <a href="dashboard.html">Admin</a>
+        </div>
+        <div class="nav-auth" id="navAuth">
+            <a href="login.html" class="btn-nav">Login</a>
+            <a href="register.html" class="btn-nav btn-primary">Register</a>
+        </div>
+        <div class="nav-user" id="navUser" style="display:none;">
+            <span id="navUserName"></span>
+            <button class="btn-nav btn-danger" onclick="logout()">Logout</button>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <section class="page-header">
+        <h1><i class="fas fa-receipt"></i> My Orders</h1>
+    </section>
+
+    <section class="section">
+        <div class="orders-container" id="ordersContainer"></div>
+        <div id="emptyOrders" class="empty-state glass">
+            <i class="fas fa-receipt"></i>
+            <h3>No orders yet</h3>
+            <p>Place your first order and it will appear here!</p>
+            <a href="menu.html" class="btn btn-primary">Order Now</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom"><p>&copy; 2026 FoodDash. All rights reserved.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>loadOrders();</script>
+</body>
+</html>
