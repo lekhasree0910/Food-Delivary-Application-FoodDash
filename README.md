@@ -409,22 +409,22 @@ Frontend will be live at `http://127.0.0.1:5500/`
 ---
 
 ## 📸 Screenshots
-
-> Add your project screenshots below. Recommended image size: 800–1200px wide, PNG/JPG format. Store images in a `screenshots/` folder in the repo root and reference them using relative paths as shown.
-
 ### 🗃️ Database Screenshots
-
-**SQLite**
-<!-- ![SQLite Database](./screenshots/database/sqlite.png) -->
-*(Add screenshot of DB Browser for SQLite showing tables and records)*
-
-**MySQL**
-<!-- ![MySQL Database](./screenshots/database/mysql.png) -->
-*(Add screenshot of MySQL Workbench / phpMyAdmin showing tables and records)*
-
 **MongoDB Atlas**
-<!-- ![MongoDB Atlas](./screenshots/database/mongodb_atlas.png) -->
-*(Add screenshot of MongoDB Atlas Collections view showing documents)*
+**Admins:**
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/3924ab3f-ee8d-4e74-ae3e-d835a5293506" />
+**Cart:**
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/c4dbdb5c-8216-4db2-9222-0c906ae9a124" />
+**Customers:**
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/22921789-5cd5-4871-a144-f0e253fd6b77" />
+**Foods:**
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/1191204e-0ebc-4e15-aef4-e2bcbea7cd14" />
+**Orders:**
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/266a15bd-9651-4e29-ae43-7e644bbb8953" />
+**Owners:**
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/3cff34db-df5c-404a-a620-4d789e98277c" />
+**Restaurants:**
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/a20bf653-61ad-4aa3-bda0-1108a6e80fa2" />
 
 ---
 
@@ -445,39 +445,24 @@ Frontend will be live at `http://127.0.0.1:5500/`
 
 | Page | Screenshot |
 |---|---|
-| Home Page | <!-- ![Home Page](./screenshots/frontend/home.png) --> *(Add screenshot)* |
-| Login Page (role selector) | <!-- ![Login Page](./screenshots/frontend/login.png) --> *(Add screenshot)* |
-| Register Page | <!-- ![Register Page](./screenshots/frontend/register.png) --> *(Add screenshot)* |
-| Restaurants Listing (search & filter) | <!-- ![Restaurants Page](./screenshots/frontend/restaurants.png) --> *(Add screenshot)* |
-| Menu Page (category filter) | <!-- ![Menu Page](./screenshots/frontend/menu.png) --> *(Add screenshot)* |
-| Cart Page (live total) | <!-- ![Cart Page](./screenshots/frontend/cart.png) --> *(Add screenshot)* |
-| Orders Page (tracking timeline) | <!-- ![Orders Page](./screenshots/frontend/orders.png) --> *(Add screenshot)* |
-| Admin Dashboard | <!-- ![Admin Dashboard](./screenshots/frontend/dashboard_admin.png) --> *(Add screenshot)* |
-| Restaurant Owner Dashboard | <!-- ![Restaurant Dashboard](./screenshots/frontend/dashboard_restaurant.png) --> *(Add screenshot)* |
-| Mobile Responsive View | <!-- ![Mobile View](./screenshots/frontend/mobile_view.png) --> *(Add screenshot)* |
+| Home Page |
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/73b0b4b8-3773-49fd-b1f0-45739d2299f3" />
+| Login Page (role selector) | 
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/714eef24-9bb2-4c6f-91ab-c5f96cfa9ee5" />
+| Register Page | 
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/10b74905-1f71-4cc9-9071-61a66df58173" />
+| Restaurants Listing (search & filter) | 
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/c34bdedc-8146-4a96-8429-ceab11cfe3ac" />
+| Menu Page (category filter) | 
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/4fa83631-5b41-412d-aae0-262e7a5c1865" />
+| Cart Page (live total) | 
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/f6b194c7-f8fb-4601-b6f8-73e51a5c011d" />
+| Orders Page (tracking timeline) | 
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/37843d3d-088f-49e1-8839-c1b2eeaa188c" />
+| Admin Dashboard | 
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/4f672f8f-f246-42b7-b0da-b0d79de1275b" />
+| Restaurant Owner Dashboard | 
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/011c3c5b-4013-479f-ac3c-ea002ae2e49a" />
+| Mobile Responsive View | 
+<img width="377" height="560" alt="image" src="https://github.com/user-attachments/assets/c246afb7-5dce-4ea6-a8b8-51a2d5581da1" />
 
----
-
-## ✅ Testing
-
-- **API testing:** Use Postman to hit all 20+ CRUD endpoints with the sample data above; verify status codes (`200`, `201`, `400`, `404`) and response bodies.
-- **Frontend testing:** Manually test each page's flow — registration → login (all 3 roles) → browse → add to cart → checkout → track order.
-- **Cross-role testing:** Confirm a customer cannot access admin/restaurant dashboards and vice versa (route guarding via stored role/session).
-- **Responsive testing:** Test on Chrome DevTools device toolbar (mobile/tablet breakpoints) and on an actual mobile device if possible.
-- **Database testing:** Verify chosen database (SQLite/MySQL/MongoDB Atlas) persists data correctly across server restarts.
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Add payment gateway integration (Razorpay/Stripe sandbox)
-- [ ] Add real-time order status updates (WebSockets)
-- [ ] Add restaurant rating & review system
-- [ ] Add JWT-based authentication in place of session flags
-- [ ] Dockerize backend + database for easier setup
-
----
-
-## 📄 License
-
-This project is developed for academic/learning purposes. Add a license (MIT, Apache 2.0, etc.) here if distributing publicly.
