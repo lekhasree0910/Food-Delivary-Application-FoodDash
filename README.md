@@ -412,42 +412,82 @@ Frontend will be live at `http://127.0.0.1:5500/`
 ### 🗃️ Database Screenshots
 **MongoDB Atlas**
 **Admins:**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/3924ab3f-ee8d-4e74-ae3e-d835a5293506" />
+
 **Cart:**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/c4dbdb5c-8216-4db2-9222-0c906ae9a124" />
+
 **Customers:**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/22921789-5cd5-4871-a144-f0e253fd6b77" />
+
 **Foods:**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/1191204e-0ebc-4e15-aef4-e2bcbea7cd14" />
+
 **Orders:**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/266a15bd-9651-4e29-ae43-7e644bbb8953" />
+
 **Owners:**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/3cff34db-df5c-404a-a620-4d789e98277c" />
+
 **Restaurants:**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/a20bf653-61ad-4aa3-bda0-1108a6e80fa2" />
 
 ---
+### 📮 Postman API Testing Screenshots
+
+<img width="1201" height="759" alt="image" src="https://github.com/user-attachments/assets/b99a1f8c-9bff-4e79-a758-488ead8e3104" />
+
+<img width="599" height="385" alt="image" src="https://github.com/user-attachments/assets/c2f3c9fb-2225-4334-b918-e8ec96bca518" />
+
+<img width="599" height="381" alt="image" src="https://github.com/user-attachments/assets/98c1816b-da9f-4ef7-8288-638765754649" />
+
+<img width="605" height="383" alt="image" src="https://github.com/user-attachments/assets/e257d68c-561d-45eb-95d6-4edff71ce68d" />
 
 ### 🖥️ Frontend Screenshots
-| Home Page |
+**| Home Page |**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/73b0b4b8-3773-49fd-b1f0-45739d2299f3" />
-| Login Page (role selector) | 
+
+**| Login Page (role selector) |**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/714eef24-9bb2-4c6f-91ab-c5f96cfa9ee5" />
-| Register Page | 
+
+**| Register Page |**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/10b74905-1f71-4cc9-9071-61a66df58173" />
-| Restaurants Listing (search & filter) | 
+
+**| Restaurants Listing (search & filter) |**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/c34bdedc-8146-4a96-8429-ceab11cfe3ac" />
-| Menu Page (category filter) | 
+
+**| Menu Page (category filter) |**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/4fa83631-5b41-412d-aae0-262e7a5c1865" />
-| Cart Page (live total) | 
+
+**| Cart Page (live total) |**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/f6b194c7-f8fb-4601-b6f8-73e51a5c011d" />
-| Orders Page (tracking timeline) | 
+
+**| Orders Page (tracking timeline) |**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/37843d3d-088f-49e1-8839-c1b2eeaa188c" />
-| Admin Dashboard | 
+
+**| Admin Dashboard |**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/4f672f8f-f246-42b7-b0da-b0d79de1275b" />
-| Restaurant Owner Dashboard | 
+
+**| Restaurant Owner Dashboard |**
+
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/011c3c5b-4013-479f-ac3c-ea002ae2e49a" />
-| Mobile Responsive View | 
+
+**| Mobile Responsive View |**
 
 <img width="377" height="560" alt="image" src="https://github.com/user-attachments/assets/c246afb7-5dce-4ea6-a8b8-51a2d5581da1" />
 
