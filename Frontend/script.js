@@ -282,20 +282,25 @@ async function loadFeaturedFoods() {
         const foods = await res.json();
 
         const featured = foods.slice(0, 6);
-        container.innerHTML = featured.map(food => `
-            <div class="food-card glass" style="animation: fadeInUp 0.5s ease ${Math.random() * 0.3}s backwards">
-                <div class="card-img" style="background: ${getRandomColor()}">
-                    ${getRandomIcon()}
-                    <span class="availability-badge ${food.availability === 'Available' ? 'badge-available' : 'badge-outofstock'}">${food.availability}</span>
+        container.innerHTML = featured.map(food => {
+            const imageContent = food.image 
+                ? `<img src="${food.image}" alt="${food.food_name}" style="width:100%; height:100%; object-fit:cover;">`
+                : `<span style="font-size: 3rem;">${getRandomIcon()}</span>`;
+            return `
+                <div class="food-card glass" style="animation: fadeInUp 0.5s ease ${Math.random() * 0.3}s backwards">
+                    <div class="card-img" style="background: ${food.image ? 'transparent' : getRandomColor()}; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                        ${imageContent}
+                        <span class="availability-badge ${food.availability === 'Available' ? 'badge-available' : 'badge-outofstock'}">${food.availability}</span>
+                    </div>
+                    <h3>${food.food_name}</h3>
+                    <div class="food-meta">${food.restaurant_name} &bull; ${food.category}</div>
+                    <div class="price">₹${food.price}</div>
+                    <button class="btn btn-primary btn-full btn-sm" onclick='addToCart(${JSON.stringify(food).replace(/'/g, "\\'")})'>
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
                 </div>
-                <h3>${food.food_name}</h3>
-                <div class="food-meta">${food.restaurant_name} &bull; ${food.category}</div>
-                <div class="price">₹${food.price}</div>
-                <button class="btn btn-primary btn-full btn-sm" onclick='addToCart(${JSON.stringify(food).replace(/'/g, "\\'")})'>
-                    <i class="fas fa-cart-plus"></i> Add to Cart
-                </button>
-            </div>
-        `).join('');
+            `;
+        }).join('');
     } catch (err) {
         container.innerHTML = '<p style="text-align:center;color:rgba(255,255,255,0.5);">Unable to load food items</p>';
     }
@@ -433,22 +438,27 @@ function renderFoods(foods) {
         return;
     }
 
-    container.innerHTML = foods.map(food => `
-        <div class="food-card glass" style="animation: fadeInUp 0.4s ease ${Math.random() * 0.2}s backwards">
-            <div class="card-img" style="background: ${getRandomColor()}">
-                ${getRandomIcon()}
-                <span class="availability-badge ${food.availability === 'Available' ? 'badge-available' : 'badge-outofstock'}">${food.availability}</span>
+    container.innerHTML = foods.map(food => {
+        const imageContent = food.image 
+            ? `<img src="${food.image}" alt="${food.food_name}" style="width:100%; height:100%; object-fit:cover;">`
+            : `<span style="font-size: 3rem;">${getRandomIcon()}</span>`;
+        return `
+            <div class="food-card glass" style="animation: fadeInUp 0.4s ease ${Math.random() * 0.2}s backwards">
+                <div class="card-img" style="background: ${food.image ? 'transparent' : getRandomColor()}; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                    ${imageContent}
+                    <span class="availability-badge ${food.availability === 'Available' ? 'badge-available' : 'badge-outofstock'}">${food.availability}</span>
+                </div>
+                <h3>${food.food_name}</h3>
+                <div class="food-meta">${food.restaurant_name} &bull; ${food.category}</div>
+                <div class="price">₹${food.price}</div>
+                <button class="btn ${food.availability === 'Available' ? 'btn-primary' : 'btn-secondary'} btn-full btn-sm"
+                    ${food.availability !== 'Available' ? 'disabled' : ''}
+                    onclick='addToCart(${JSON.stringify(food).replace(/'/g, "\\'")})'>
+                    <i class="fas fa-cart-plus"></i> ${food.availability === 'Available' ? 'Add to Cart' : 'Out of Stock'}
+                </button>
             </div>
-            <h3>${food.food_name}</h3>
-            <div class="food-meta">${food.restaurant_name} &bull; ${food.category}</div>
-            <div class="price">₹${food.price}</div>
-            <button class="btn ${food.availability === 'Available' ? 'btn-primary' : 'btn-secondary'} btn-full btn-sm"
-                ${food.availability !== 'Available' ? 'disabled' : ''}
-                onclick='addToCart(${JSON.stringify(food).replace(/'/g, "\\'")})'>
-                <i class="fas fa-cart-plus"></i> ${food.availability === 'Available' ? 'Add to Cart' : 'Out of Stock'}
-            </button>
-        </div>
-    `).join('');
+        `;
+    }).join('');
 }
 
 let foodSearchTimeout;
