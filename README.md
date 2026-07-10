@@ -489,5 +489,6 @@ Frontend will be live at `http://127.0.0.1:5500/`
 
 **| Mobile Responsive View |**
 
-<img width="377" height="560" alt="image" src="https://github.com/user-attachments/assets/c246afb7-5dce-4ea6-a8b8-51a2d5581da1" />
+<img width="472" height="560" alt="image" src="https://github.com/user-attachments/assets/110011d6-e37d-49a2-b58f-f2ead3dba5d7" />
+
 
