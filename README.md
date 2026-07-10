@@ -4,24 +4,6 @@ A full-stack **Food Delivery Application** inspired by platforms like Swiggy, Zo
 
 Customers can browse restaurants, search food items, manage a cart, place orders, and track delivery status. Restaurant owners manage their menus, and administrators oversee the entire platform — each through their **own dedicated login and dashboard**.
 
----
-
-## 📖 Table of Contents
-
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Folder Structure](#-folder-structure)
-- [User Roles & Authentication](#-user-roles--authentication)
-- [Database Design](#-database-design)
-- [API Reference](#-api-reference)
-- [Sample Test Data](#-sample-test-data)
-- [Getting Started](#-getting-started)
-- [Screenshots](#-screenshots)
-- [Testing](#-testing)
-- [Roadmap](#-roadmap)
-- [License](#-license)
-
----
 
 ## ✨ Features
 
@@ -453,32 +435,32 @@ Frontend will be live at `http://127.0.0.1:5500/`
 ### 🖥️ Frontend Screenshots
 **| Home Page |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/a5627e44-74dc-4c85-82aa-0026f5ec7f4a" />
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/5ae64474-5320-47a7-b843-090986e81864" />
 
 
 **| Login Page (role selector) |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/dd125abc-0126-40db-9d83-8aa260ee7c03" />
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/e6a3b128-1287-46bd-808f-73e38dd6ac0f" />
 
 **| Register Page |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/4ee4813c-5da1-497c-9b2e-2c6bb1b2c8d5" />
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/953a645f-6ad3-4ff0-a84a-7de2ef545a38" />
 
 **| Restaurants Listing (search & filter) |**
 
-<img width="1920" height="1128" alt="image" src="https://github.com/user-attachments/assets/a5584612-b356-4d5d-ac81-b27646bd5857" />
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/a21dd7e8-23ea-44fc-b9e4-aebeb773eb3f" />
 
 **| Menu Page (category filter) |**
 
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/30289805-de58-4f8f-8b4d-4047bc3a9395" />
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/499457c3-e330-479e-a798-c14a99793ffe" />
 
 **| Cart Page (live total) |**
 
-<img width="837" height="470" alt="image" src="https://github.com/user-attachments/assets/691e8b65-e4fe-4492-8af1-8191ce46464e" />
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/a7331f6d-6283-43f8-97ca-144c3267e671" />
 
 **| Orders Page (tracking timeline) |**
 
-<img width="833" height="490" alt="image" src="https://github.com/user-attachments/assets/4bae7581-ea26-4603-b6c0-a9a31f5f58dc" />
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/cd8fc237-ccc3-4bfd-8569-319d57bbae69" />
 
 **| Admin Dashboard |**
 
@@ -491,5 +473,3 @@ Frontend will be live at `http://127.0.0.1:5500/`
 **| Mobile Responsive View |**
 
 <img width="472" height="560" alt="image" src="https://github.com/user-attachments/assets/110011d6-e37d-49a2-b58f-f2ead3dba5d7" />
-
-
