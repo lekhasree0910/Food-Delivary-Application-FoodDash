@@ -464,5 +464,6 @@ Frontend will be live at `http://127.0.0.1:5500/`
 | Restaurant Owner Dashboard | 
 <img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/011c3c5b-4013-479f-ac3c-ea002ae2e49a" />
 | Mobile Responsive View | 
+
 <img width="377" height="560" alt="image" src="https://github.com/user-attachments/assets/c246afb7-5dce-4ea6-a8b8-51a2d5581da1" />
 
